@@ -202,7 +202,7 @@ while 1:
                                     int(user_age) >= center_session['min_age_limit']):
                                 raise_alerts(user_name, email_id, center, center_session)
                                 slot_found = True
-                time.sleep(5)
+                time.sleep(5*len(pincodes))
                 if slot_found:
                     break
             except:
